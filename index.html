@@ -45,7 +45,7 @@
 	.center-div
 		{
 			margin: 0 auto;
-			max-width: 450px;
+			max-width: 700px;
 			width: 100%;
 			height: auto;
 			border-radius: 3px;
@@ -112,9 +112,9 @@
 
 
 
-									<div class="center-div" style=""></div>
+								<!--	<div class="center-div" style=""></div>
 									<script type="text/javascript">
-										var clock;
+										var clock,countup;
 
 										var dim = $(window).width();
 										console.log(dim);
@@ -127,14 +127,23 @@
 											var currentDate = new Date();
 
 											// Set some date in the past. In this case, it's always been since Jan 1
-												var futureDate  = new Date("Dec 23, 2019 22:00:00");
+											var futureDate  = new Date();
 
 											var clock = new FlipClock(el, futureDate, {
 												face: 'DayCounter',
 												countdown: true
-											});
-										});
-									</script>
+							        });
+
+											if(currentDate >= futureDate){
+
+												clock.reset(function(){
+													console.log("dovrebbe fermarsi");
+												});
+											}
+
+									});
+
+								</script>-->
 
 
 
@@ -161,7 +170,7 @@
 	<!--banner end here-->
 
 
-	<!-- about -->
+	<!-- about
 	<div class="about" id="about">
 		<div class="banner_bottom_w3-agile_grids">
 			<div class="container">
@@ -177,7 +186,7 @@
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-		<!-- about-bottom-->
+		<!-- about-bottom
 		<div class="services-inner-agileits-w3layouts">
 			<div class="container">
 				<div class="col-md-8">
@@ -228,6 +237,28 @@
 				<div class="col-md-4 events-grids">
 
 					<div class="thumbnail events-wthree">
+						<img src="images/shade.jpg" class="img-responsive" alt="">
+						<div class="social-icons events-icons right-w3-agile1-sectn fotw3ls3">
+							<div class="caption">
+								<h4>
+									<a href="https://drive.google.com/folderview?id=1FcDj7E3JwL8PeCVKwknveLRonc4XwDZD" >Christmas Party</a>
+								</h4>
+								<div class="event-top">
+									<p>
+										<span class="fa fa-calendar" aria-hidden="true"></span> 23 Dicembre 2019</p>
+								</div>
+									<p class="paragraph-w3l">Etoile Club</p> <br> <br> <br>
+							</div>
+							<div class="event-bottom">
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-4 events-grids">
+					<div class="thumbnail events-wthree">
 						<img src="images/circus.jpg" class="img-responsive" alt="">
 						<div class="social-icons events-icons right-w3-agile1-sectn fotw3ls3">
 							<div class="caption">
@@ -261,28 +292,6 @@
 										<span class="fa fa-calendar" aria-hidden="true"></span> 28 Settembre 2019</p>
 								</div>
 								<p class="paragraph-w3l">Etoile Club</p> <br> <br> <br>
-							</div>
-							<div class="event-bottom">
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-md-4 events-grids">
-					<div class="thumbnail events-wthree">
-						<img src="images/fluo.jpg" class="img-responsive" alt="">
-						<div class="social-icons events-icons right-w3-agile1-sectn fotw3ls3">
-							<div class="caption">
-								<h4>
-									<a href="https://drive.google.com/drive/folders/1LM5BdWGsU7WFDuO7k4bEMKxyZZH-hZxb">Fluo Party</a>
-								</h4>
-								<div class="event-top">
-									<p>
-										<span class="fa fa-calendar" aria-hidden="true"></span> 8 Giugno 2019</p>
-								</div>
-								<p class="paragraph-w3l">Village</p> <br> <br><br>
 							</div>
 							<div class="event-bottom">
 
